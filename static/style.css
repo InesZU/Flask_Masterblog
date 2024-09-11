@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.post {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #FFDB58; /* Mustard yellow */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 20px; /* Rounded corners for cuteness */
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.button:hover {
+    background-color: #E6C455; /* Slightly darker mustard on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a pop effect */
+}
+
+.button:active {
+    background-color: #CCAF40; /* Even darker mustard when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Pressed down effect */
+    transform: translateY(2px); /* Button moves down slightly when clicked */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+/* Style for like count */
+.like-count {
+    font-size: 16px; /* Adjust size as needed */
+    color: #333; /* Text color */
+    margin-right: 10px; /* Space between count and button */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.like-count::after {
+    content: '\2764'; /* Unicode heart character */
+    color: #bd2848; /* Heart color */
+    margin-right: 5px; /* Space between heart and number */
+    font-size: 20px; /* Size of the heart icon */
+}
